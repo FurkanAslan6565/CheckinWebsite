@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "title": "Admin | Check-IN Portugal",
+    "description": "Check-IN Portugal administration panel",
+    "loginTitle": "Login | Check-IN Admin"
+  },
+  "brand": {
+    "name": "Check-IN",
+    "cms": "Admin CMS"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "opportunities": "Opportunities",
+    "applications": "Applications",
+    "news": "News",
+    "partners": "Partners",
+    "gallery": "Gallery",
+    "media": "Media",
+    "settings": "Settings",
+    "logout": "Sign out",
+    "expandMenu": "Expand menu",
+    "collapseMenu": "Collapse menu"
+  },
+  "header": {
+    "viewSite": "View site",
+    "notifications": "Notifications",
+    "language": "Language"
+  },
+  "locales": {
+    "pt": "Portuguese",
+    "en": "English",
+    "es": "Spanish",
+    "tr": "Turkish"
+  },
+  "login": {
+    "title": "Check-IN Admin",
+    "subtitle": "Sign in to access the management panel",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in to panel",
+    "copyright": "Check-IN Portugal © {year}",
+    "errors": {
+      "invalid": "Incorrect email or password.",
+      "generic": "An error occurred. Please try again."
+    }
+  },
+  "common": {
+    "createNew": "Create new",
+    "save": "Save changes",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirmDelete": "Are you sure you want to delete this record?",
+    "deleteError": "Failed to delete",
+    "saveError": "Failed to save",
+    "empty": "No records found.",
+    "published": "Published",
+    "draft": "Draft",
+    "live": "Live",
+    "visible": "Visible",
+    "hidden": "Hidden",
+    "actions": "Actions",
+    "status": "Status",
+    "author": "Author",
+    "updated": "Updated",
+    "viewAll": "View all",
+    "viewAllMasc": "View all",
+    "accept": "Accept",
+    "reject": "Reject",
+    "remove": "Remove",
+    "noTitle": "Untitled",
+    "video": "Video",
+    "publishOnSite": "Publish on site",
+    "visibleOnSite": "Visible on site"
+  },
+  "roles": {
+    "SUPER_ADMIN": "Super Admin",
+    "ADMIN": "Administrator",
+    "EDITOR": "Editor",
+    "PROJECT_MANAGER": "Project Manager"
+  },
+  "status": {
+    "project": {
+      "DRAFT": "Draft",
+      "ACTIVE": "Active",
+      "COMPLETED": "Completed"
+    },
+    "application": {
+      "PENDING": "Pending",
+      "ACCEPTED": "Accepted",
+      "REJECTED": "Rejected"
+    }
+  },
+  "enums": {
+    "programs": {
+      "ERASMUS_PLUS": "Erasmus+",
+      "ESC": "European Solidarity Corps",
+      "YOUTH_EXCHANGE": "Youth Exchange",
+      "TRAINING_COURSE": "Training Course",
+      "KA1": "KA1",
+      "KA2": "KA2",
+      "YOUTH_PARTICIPATION": "Youth Participation",
+      "CERV": "CERV"
+    },
+    "opportunityTypes": {
+      "VOLUNTEERING": "Volunteering",
+      "TRAINING_COURSE": "Training",
+      "YOUTH_EXCHANGE": "Exchange"
+    },
+    "partnerTypes": {
+      "EUROPEAN_INSTITUTION": "European Institution",
+      "MUNICIPALITY": "Municipality",
+      "UNIVERSITY": "University",
+      "NGO": "NGO"
+    },
+    "partnerTypesShort": {
+      "EUROPEAN_INSTITUTION": "EU Inst.",
+      "MUNICIPALITY": "Municipality",
+      "UNIVERSITY": "University",
+      "NGO": "NGO"
+    },
+    "galleryCategories": {
+      "General": "General",
+      "Erasmus+": "Erasmus+",
+      "ESC": "ESC",
+      "Team": "Team",
+      "Events": "Events"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {name}",
+    "stats": {
+      "projects": "Projects",
+      "projectsActive": "{count} active",
+      "opportunities": "Opportunities",
+      "opportunitiesOpen": "{count} open",
+      "applications": "Applications",
+      "applicationsPending": "{count} pending",
+      "news": "News",
+      "partners": "Partners",
+      "gallery": "Gallery"
+    },
+    "recentApplications": {
+      "title": "Recent applications",
+      "description": "Last 5 applications received",
+      "empty": "No applications yet."
+    },
+    "recentProjects": {
+      "title": "Recent projects",
+      "description": "Latest updates",
+      "empty": "No projects yet."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "manageTitle": "Project Management",
+    "manageDescription": "Create, edit and publish European projects",
+    "createTitle": "Create Project",
+    "createDescription": "Fill in the details of the new European project",
+    "editTitle": "Edit Project",
+    "editDescription": "Edit project details",
+    "newTitle": "New Project",
+    "createLabel": "Create project",
+    "empty": "No projects yet. Create the first one!",
+    "form": {
+      "title": "Title",
+      "country": "Country",
+      "duration": "Duration",
+      "durationPlaceholder": "e.g. 12 months",
+      "program": "Program",
+      "status": "Status",
+      "startDate": "Start date",
+      "endDate": "End date",
+      "coverImageUrl": "Cover image URL",
+      "coverImagePlaceholder": "https://...",
+      "description": "Description",
+      "results": "Results",
+      "resultsHint": "Impact and results achieved by the project",
+      "galleryUrls": "Gallery (URLs, one per line)"
+    }
+  },
+  "opportunities": {
+    "title": "Opportunities",
+    "manageTitle": "Opportunity Management",
+    "manageDescription": "Volunteering, training courses and exchanges",
+    "createTitle": "Create Opportunity",
+    "editTitle": "Edit Opportunity",
+    "newTitle": "New Opportunity",
+    "createLabel": "Create opportunity",
+    "empty": "No opportunities yet.",
+    "form": {
+      "title": "Title",
+      "type": "Type",
+      "location": "Location",
+      "duration": "Duration",
+      "deadline": "Application deadline",
+      "coverImageUrl": "Cover image URL",
+      "description": "Description",
+      "requirements": "Requirements"
+    },
+    "table": {
+      "deadline": "Deadline",
+      "applications": "Applications"
+    }
+  },
+  "applications": {
+    "title": "Applications",
+    "manageTitle": "Application Management",
+    "manageDescription": "Review and process received applications",
+    "empty": "No applications yet.",
+    "table": {
+      "candidate": "Candidate",
+      "opportunity": "Opportunity",
+      "date": "Date"
+    }
+  },
+  "news": {
+    "title": "News",
+    "manageTitle": "News Management",
+    "manageDescription": "Publish news and updates",
+    "createTitle": "Create News",
+    "editTitle": "Edit News",
+    "newTitle": "New Article",
+    "createLabel": "Create article",
+    "empty": "No news yet.",
+    "form": {
+      "title": "Title",
+      "coverImageUrl": "Cover image URL",
+      "content": "Content",
+      "contentHint": "Basic HTML supported for formatting"
+    }
+  },
+  "partners": {
+    "title": "Partners",
+    "manageTitle": "Partner Management",
+    "manageDescription": "Partner organisations and institutions",
+    "createTitle": "Add Partner",
+    "editTitle": "Edit Partner",
+    "newTitle": "New Partner",
+    "createLabel": "Add partner",
+    "empty": "No partners yet.",
+    "form": {
+      "name": "Name",
+      "type": "Type",
+      "logoUrl": "Logo URL",
+      "website": "Website",
+      "websitePlaceholder": "https://...",
+      "order": "Display order"
+    },
+    "table": {
+      "logo": "Logo",
+      "name": "Name",
+      "type": "Type",
+      "order": "Order"
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "manageTitle": "Media Gallery",
+    "manageDescription": "Photos and videos displayed on the public site",
+    "addTitle": "Add item",
+    "addButton": "Add to gallery",
+    "addError": "Failed to add item",
+    "empty": "Gallery is empty.",
+    "form": {
+      "titleOptional": "Title (optional)",
+      "url": "URL",
+      "category": "Category",
+      "isVideo": "Is video"
+    }
+  },
+  "media": {
+    "title": "Media Library",
+    "manageTitle": "Media Library",
+    "manageDescription": "Centralised file and image management",
+    "registerTitle": "Register media",
+    "registerDescription": "Add file URLs (Cloudinary or external)",
+    "registerButton": "Register file",
+    "uploadError": "Failed to upload",
+    "empty": "Media library is empty.",
+    "form": {
+      "filename": "Filename",
+      "url": "URL",
+      "cloudinaryId": "Cloudinary ID",
+      "mimeType": "MIME type"
+    }
+  },
+  "users": {
+    "title": "Settings",
+    "manageTitle": "CMS Users",
+    "manageDescription": "Manage admin panel access and roles",
+    "createTitle": "Create User",
+    "editTitle": "Edit User",
+    "newTitle": "New User",
+    "createLabel": "New user",
+    "table": {
+      "user": "User",
+      "role": "Role",
+      "content": "Content",
+      "since": "Since"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "passwordOptional": "New password (optional)",
+      "role": "Role",
+      "passwordRequired": "Password is required for new users",
+      "createButton": "Create user"
+    }
+  },
+  "table": {
+    "title": "Title",
+    "program": "Program",
+    "type": "Type"
+  }
+}

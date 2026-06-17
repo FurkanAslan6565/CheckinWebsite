@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "title": "Yönetim | Check-IN Portugal",
+    "description": "Check-IN Portugal yönetim paneli",
+    "loginTitle": "Giriş | Check-IN Yönetim"
+  },
+  "brand": {
+    "name": "Check-IN",
+    "cms": "Yönetim Paneli"
+  },
+  "nav": {
+    "dashboard": "Kontrol Paneli",
+    "projects": "Projeler",
+    "opportunities": "Fırsatlar",
+    "applications": "Başvurular",
+    "news": "Haberler",
+    "partners": "Ortaklar",
+    "gallery": "Galeri",
+    "media": "Medya",
+    "settings": "Ayarlar",
+    "logout": "Oturumu kapat",
+    "expandMenu": "Menüyü genişlet",
+    "collapseMenu": "Menüyü daralt"
+  },
+  "header": {
+    "viewSite": "Siteyi görüntüle",
+    "notifications": "Bildirimler",
+    "language": "Dil"
+  },
+  "locales": {
+    "pt": "Portekizce",
+    "en": "İngilizce",
+    "es": "İspanyolca",
+    "tr": "Türkçe"
+  },
+  "login": {
+    "title": "Check-IN Yönetim",
+    "subtitle": "Yönetim paneline erişmek için oturum açın",
+    "email": "E-posta",
+    "password": "Şifre",
+    "submit": "Panele giriş yap",
+    "copyright": "Check-IN Portugal © {year}",
+    "errors": {
+      "invalid": "E-posta veya şifre hatalı.",
+      "generic": "Bir hata oluştu. Lütfen tekrar deneyin."
+    }
+  },
+  "common": {
+    "createNew": "Yeni oluştur",
+    "save": "Değişiklikleri kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "confirmDelete": "Bu kaydı silmek istediğinizden emin misiniz?",
+    "deleteError": "Silme işlemi başarısız oldu",
+    "saveError": "Kaydetme işlemi başarısız oldu",
+    "empty": "Kayıt bulunamadı.",
+    "published": "Yayında",
+    "draft": "Taslak",
+    "live": "Canlı",
+    "visible": "Görünür",
+    "hidden": "Gizli",
+    "actions": "İşlemler",
+    "status": "Durum",
+    "author": "Yazar",
+    "updated": "Güncellendi",
+    "viewAll": "Tümünü gör",
+    "viewAllMasc": "Tümünü gör",
+    "accept": "Kabul et",
+    "reject": "Reddet",
+    "remove": "Kaldır",
+    "noTitle": "Başlıksız",
+    "video": "Video",
+    "publishOnSite": "Sitede yayınla",
+    "visibleOnSite": "Sitede görünür"
+  },
+  "roles": {
+    "SUPER_ADMIN": "Süper Yönetici",
+    "ADMIN": "Yönetici",
+    "EDITOR": "Editör",
+    "PROJECT_MANAGER": "Proje Yöneticisi"
+  },
+  "status": {
+    "project": {
+      "DRAFT": "Taslak",
+      "ACTIVE": "Aktif",
+      "COMPLETED": "Tamamlandı"
+    },
+    "application": {
+      "PENDING": "Beklemede",
+      "ACCEPTED": "Kabul edildi",
+      "REJECTED": "Reddedildi"
+    }
+  },
+  "enums": {
+    "programs": {
+      "ERASMUS_PLUS": "Erasmus+",
+      "ESC": "Avrupa Dayanışma Programı",
+      "YOUTH_EXCHANGE": "Gençlik Değişimi",
+      "TRAINING_COURSE": "Eğitim Kursu",
+      "KA1": "KA1",
+      "KA2": "KA2",
+      "YOUTH_PARTICIPATION": "Gençlik Katılımı",
+      "CERV": "CERV"
+    },
+    "opportunityTypes": {
+      "VOLUNTEERING": "Gönüllülük",
+      "TRAINING_COURSE": "Eğitim",
+      "YOUTH_EXCHANGE": "Değişim"
+    },
+    "partnerTypes": {
+      "EUROPEAN_INSTITUTION": "Avrupa Kurumu",
+      "MUNICIPALITY": "Belediye",
+      "UNIVERSITY": "Üniversite",
+      "NGO": "STK"
+    },
+    "partnerTypesShort": {
+      "EUROPEAN_INSTITUTION": "Avr. Kurum",
+      "MUNICIPALITY": "Belediye",
+      "UNIVERSITY": "Üniversite",
+      "NGO": "STK"
+    },
+    "galleryCategories": {
+      "General": "Genel",
+      "Erasmus+": "Erasmus+",
+      "ESC": "ESC",
+      "Team": "Ekip",
+      "Events": "Etkinlikler"
+    }
+  },
+  "dashboard": {
+    "title": "Kontrol Paneli",
+    "welcome": "Tekrar hoş geldiniz, {name}",
+    "stats": {
+      "projects": "Projeler",
+      "projectsActive": "{count} aktif",
+      "opportunities": "Fırsatlar",
+      "opportunitiesOpen": "{count} açık",
+      "applications": "Başvurular",
+      "applicationsPending": "{count} beklemede",
+      "news": "Haberler",
+      "partners": "Ortaklar",
+      "gallery": "Galeri"
+    },
+    "recentApplications": {
+      "title": "Son başvurular",
+      "description": "Alınan son 5 başvuru",
+      "empty": "Henüz başvuru yok."
+    },
+    "recentProjects": {
+      "title": "Son projeler",
+      "description": "Son güncellemeler",
+      "empty": "Henüz proje yok."
+    }
+  },
+  "projects": {
+    "title": "Projeler",
+    "manageTitle": "Proje Yönetimi",
+    "manageDescription": "Avrupa projelerini oluşturun, düzenleyin ve yayınlayın",
+    "createTitle": "Proje Oluştur",
+    "createDescription": "Yeni Avrupa projesinin ayrıntılarını doldurun",
+    "editTitle": "Projeyi Düzenle",
+    "editDescription": "Proje ayrıntılarını düzenleyin",
+    "newTitle": "Yeni Proje",
+    "createLabel": "Proje oluştur",
+    "empty": "Henüz proje yok. İlk projeyi oluşturun!",
+    "form": {
+      "title": "Başlık",
+      "country": "Ülke",
+      "duration": "Süre",
+      "durationPlaceholder": "örn: 12 ay",
+      "program": "Program",
+      "status": "Durum",
+      "startDate": "Başlangıç tarihi",
+      "endDate": "Bitiş tarihi",
+      "coverImageUrl": "Kapak görseli URL'si",
+      "coverImagePlaceholder": "https://...",
+      "description": "Açıklama",
+      "results": "Sonuçlar",
+      "resultsHint": "Projenin elde ettiği etki ve sonuçlar",
+      "galleryUrls": "Galeri (URL'ler, her satıra bir tane)"
+    }
+  },
+  "opportunities": {
+    "title": "Fırsatlar",
+    "manageTitle": "Fırsat Yönetimi",
+    "manageDescription": "Gönüllülük, eğitimler ve değişim programları",
+    "createTitle": "Fırsat Oluştur",
+    "editTitle": "Fırsatı Düzenle",
+    "newTitle": "Yeni Fırsat",
+    "createLabel": "Fırsat oluştur",
+    "empty": "Henüz fırsat yok.",
+    "form": {
+      "title": "Başlık",
+      "type": "Tür",
+      "location": "Konum",
+      "duration": "Süre",
+      "deadline": "Başvuru son tarihi",
+      "coverImageUrl": "Kapak görseli URL'si",
+      "description": "Açıklama",
+      "requirements": "Gereksinimler"
+    },
+    "table": {
+      "deadline": "Son tarih",
+      "applications": "Başvurular"
+    }
+  },
+  "applications": {
+    "title": "Başvurular",
+    "manageTitle": "Başvuru Yönetimi",
+    "manageDescription": "Gelen başvuruları inceleyin ve işleyin",
+    "empty": "Henüz başvuru yok.",
+    "table": {
+      "candidate": "Aday",
+      "opportunity": "Fırsat",
+      "date": "Tarih"
+    }
+  },
+  "news": {
+    "title": "Haberler",
+    "manageTitle": "Haber Yönetimi",
+    "manageDescription": "Haberler ve güncellemeler yayınlayın",
+    "createTitle": "Haber Oluştur",
+    "editTitle": "Haberi Düzenle",
+    "newTitle": "Yeni Haber",
+    "createLabel": "Haber oluştur",
+    "empty": "Henüz haber yok.",
+    "form": {
+      "title": "Başlık",
+      "coverImageUrl": "Kapak görseli URL'si",
+      "content": "İçerik",
+      "contentHint": "Biçimlendirme için temel HTML desteklenir"
+    }
+  },
+  "partners": {
+    "title": "Ortaklar",
+    "manageTitle": "Ortak Yönetimi",
+    "manageDescription": "Ortak kuruluşlar ve kurumlar",
+    "createTitle": "Ortak Ekle",
+    "editTitle": "Ortak Düzenle",
+    "newTitle": "Yeni Ortak",
+    "createLabel": "Ortak ekle",
+    "empty": "Henüz ortak yok.",
+    "form": {
+      "name": "Ad",
+      "type": "Tür",
+      "logoUrl": "Logo URL'si",
+      "website": "Web sitesi",
+      "websitePlaceholder": "https://...",
+      "order": "Görüntüleme sırası"
+    },
+    "table": {
+      "logo": "Logo",
+      "name": "Ad",
+      "type": "Tür",
+      "order": "Sıra"
+    }
+  },
+  "gallery": {
+    "title": "Galeri",
+    "manageTitle": "Medya Galerisi",
+    "manageDescription": "Halka açık sitede gösterilen fotoğraf ve videolar",
+    "addTitle": "Öğe ekle",
+    "addButton": "Galeriye ekle",
+    "addError": "Ekleme işlemi başarısız oldu",
+    "empty": "Galeri boş.",
+    "form": {
+      "titleOptional": "Başlık (isteğe bağlı)",
+      "url": "URL",
+      "category": "Kategori",
+      "isVideo": "Video"
+    }
+  },
+  "media": {
+    "title": "Medya Kütüphanesi",
+    "manageTitle": "Medya Kütüphanesi",
+    "manageDescription": "Dosya ve görsellerin merkezi yönetimi",
+    "registerTitle": "Medya kaydet",
+    "registerDescription": "Dosya URL'leri ekleyin (Cloudinary veya harici)",
+    "registerButton": "Dosyayı kaydet",
+    "uploadError": "Yükleme işlemi başarısız oldu",
+    "empty": "Medya kütüphanesi boş.",
+    "form": {
+      "filename": "Dosya adı",
+      "url": "URL",
+      "cloudinaryId": "Cloudinary ID",
+      "mimeType": "MIME türü"
+    }
+  },
+  "users": {
+    "title": "Ayarlar",
+    "manageTitle": "CMS Kullanıcıları",
+    "manageDescription": "Yönetim paneli erişimlerini ve rollerini yönetin",
+    "createTitle": "Kullanıcı Oluştur",
+    "editTitle": "Kullanıcı Düzenle",
+    "newTitle": "Yeni Kullanıcı",
+    "createLabel": "Yeni kullanıcı",
+    "table": {
+      "user": "Kullanıcı",
+      "role": "Rol",
+      "content": "İçerik",
+      "since": "Kayıt tarihi"
+    },
+    "form": {
+      "name": "Ad",
+      "email": "E-posta",
+      "password": "Şifre",
+      "passwordOptional": "Yeni şifre (isteğe bağlı)",
+      "role": "Rol",
+      "passwordRequired": "Yeni kullanıcılar için şifre zorunludur",
+      "createButton": "Kullanıcı oluştur"
+    }
+  },
+  "table": {
+    "title": "Başlık",
+    "program": "Program",
+    "type": "Tür"
+  }
+}

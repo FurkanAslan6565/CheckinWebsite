@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "title": "Admin | Check-IN Portugal",
+    "description": "Painel de administração Check-IN Portugal",
+    "loginTitle": "Login | Check-IN Admin"
+  },
+  "brand": {
+    "name": "Check-IN",
+    "cms": "Admin CMS"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "projects": "Projetos",
+    "opportunities": "Oportunidades",
+    "applications": "Candidaturas",
+    "news": "Notícias",
+    "partners": "Parceiros",
+    "gallery": "Galeria",
+    "media": "Media",
+    "settings": "Definições",
+    "logout": "Terminar sessão",
+    "expandMenu": "Expandir menu",
+    "collapseMenu": "Recolher menu"
+  },
+  "header": {
+    "viewSite": "Ver site",
+    "notifications": "Notificações",
+    "language": "Idioma"
+  },
+  "locales": {
+    "pt": "Português",
+    "en": "Inglês",
+    "es": "Espanhol",
+    "tr": "Turco"
+  },
+  "login": {
+    "title": "Check-IN Admin",
+    "subtitle": "Inicie sessão para aceder ao painel de gestão",
+    "email": "Email",
+    "password": "Palavra-passe",
+    "submit": "Entrar no painel",
+    "copyright": "Check-IN Portugal © {year}",
+    "errors": {
+      "invalid": "Email ou palavra-passe incorretos.",
+      "generic": "Ocorreu um erro. Tente novamente."
+    }
+  },
+  "common": {
+    "createNew": "Criar novo",
+    "save": "Guardar alterações",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "confirmDelete": "Tem a certeza que deseja eliminar este registo?",
+    "deleteError": "Erro ao eliminar",
+    "saveError": "Erro ao guardar",
+    "empty": "Nenhum registo encontrado.",
+    "published": "Publicado",
+    "draft": "Rascunho",
+    "live": "Live",
+    "visible": "Visível",
+    "hidden": "Oculto",
+    "actions": "Ações",
+    "status": "Estado",
+    "author": "Autor",
+    "updated": "Atualizado",
+    "viewAll": "Ver todas",
+    "viewAllMasc": "Ver todos",
+    "accept": "Aceitar",
+    "reject": "Rejeitar",
+    "remove": "Remover",
+    "noTitle": "Sem título",
+    "video": "Vídeo",
+    "publishOnSite": "Publicar no site",
+    "visibleOnSite": "Visível no site"
+  },
+  "roles": {
+    "SUPER_ADMIN": "Super Admin",
+    "ADMIN": "Administrador",
+    "EDITOR": "Editor",
+    "PROJECT_MANAGER": "Gestor de Projetos"
+  },
+  "status": {
+    "project": {
+      "DRAFT": "Rascunho",
+      "ACTIVE": "Ativo",
+      "COMPLETED": "Concluído"
+    },
+    "application": {
+      "PENDING": "Pendente",
+      "ACCEPTED": "Aceite",
+      "REJECTED": "Rejeitada"
+    }
+  },
+  "enums": {
+    "programs": {
+      "ERASMUS_PLUS": "Erasmus+",
+      "ESC": "Corpo Europeu de Solidariedade",
+      "YOUTH_EXCHANGE": "Intercâmbio Juvenil",
+      "TRAINING_COURSE": "Curso de Formação",
+      "KA1": "KA1",
+      "KA2": "KA2",
+      "YOUTH_PARTICIPATION": "Participação Juvenil",
+      "CERV": "CERV"
+    },
+    "opportunityTypes": {
+      "VOLUNTEERING": "Voluntariado",
+      "TRAINING_COURSE": "Formação",
+      "YOUTH_EXCHANGE": "Intercâmbio"
+    },
+    "partnerTypes": {
+      "EUROPEAN_INSTITUTION": "Instituição Europeia",
+      "MUNICIPALITY": "Município",
+      "UNIVERSITY": "Universidade",
+      "NGO": "ONG"
+    },
+    "partnerTypesShort": {
+      "EUROPEAN_INSTITUTION": "Inst. Europeia",
+      "MUNICIPALITY": "Município",
+      "UNIVERSITY": "Universidade",
+      "NGO": "ONG"
+    },
+    "galleryCategories": {
+      "General": "Geral",
+      "Erasmus+": "Erasmus+",
+      "ESC": "ESC",
+      "Team": "Equipa",
+      "Events": "Eventos"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Bem-vindo de volta, {name}",
+    "stats": {
+      "projects": "Projetos",
+      "projectsActive": "{count} ativos",
+      "opportunities": "Oportunidades",
+      "opportunitiesOpen": "{count} abertas",
+      "applications": "Candidaturas",
+      "applicationsPending": "{count} pendentes",
+      "news": "Notícias",
+      "partners": "Parceiros",
+      "gallery": "Galeria"
+    },
+    "recentApplications": {
+      "title": "Candidaturas recentes",
+      "description": "Últimas 5 candidaturas recebidas",
+      "empty": "Sem candidaturas ainda."
+    },
+    "recentProjects": {
+      "title": "Projetos recentes",
+      "description": "Últimas atualizações",
+      "empty": "Sem projetos ainda."
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "manageTitle": "Gestão de Projetos",
+    "manageDescription": "Crie, edite e publique projetos europeus",
+    "createTitle": "Criar Projeto",
+    "createDescription": "Preencha os detalhes do novo projeto europeu",
+    "editTitle": "Editar Projeto",
+    "editDescription": "Edite os detalhes do projeto",
+    "newTitle": "Novo Projeto",
+    "createLabel": "Criar projeto",
+    "empty": "Ainda não existem projetos. Crie o primeiro!",
+    "form": {
+      "title": "Título",
+      "country": "País",
+      "duration": "Duração",
+      "durationPlaceholder": "ex: 12 meses",
+      "program": "Programa",
+      "status": "Estado",
+      "startDate": "Data de início",
+      "endDate": "Data de fim",
+      "coverImageUrl": "URL da imagem de capa",
+      "coverImagePlaceholder": "https://...",
+      "description": "Descrição",
+      "results": "Resultados",
+      "resultsHint": "Impacto e resultados alcançados pelo projeto",
+      "galleryUrls": "Galeria (URLs, uma por linha)"
+    }
+  },
+  "opportunities": {
+    "title": "Oportunidades",
+    "manageTitle": "Gestão de Oportunidades",
+    "manageDescription": "Voluntariado, formações e intercâmbios",
+    "createTitle": "Criar Oportunidade",
+    "editTitle": "Editar Oportunidade",
+    "newTitle": "Nova Oportunidade",
+    "createLabel": "Criar oportunidade",
+    "empty": "Ainda não existem oportunidades.",
+    "form": {
+      "title": "Título",
+      "type": "Tipo",
+      "location": "Localização",
+      "duration": "Duração",
+      "deadline": "Prazo de candidatura",
+      "coverImageUrl": "URL da imagem de capa",
+      "description": "Descrição",
+      "requirements": "Requisitos"
+    },
+    "table": {
+      "deadline": "Prazo",
+      "applications": "Candidaturas"
+    }
+  },
+  "applications": {
+    "title": "Candidaturas",
+    "manageTitle": "Gestão de Candidaturas",
+    "manageDescription": "Revise e processe candidaturas recebidas",
+    "empty": "Ainda não existem candidaturas.",
+    "table": {
+      "candidate": "Candidato",
+      "opportunity": "Oportunidade",
+      "date": "Data"
+    }
+  },
+  "news": {
+    "title": "Notícias",
+    "manageTitle": "Gestão de Notícias",
+    "manageDescription": "Publique novidades e atualizações",
+    "createTitle": "Criar Notícia",
+    "editTitle": "Editar Notícia",
+    "newTitle": "Nova Notícia",
+    "createLabel": "Criar notícia",
+    "empty": "Ainda não existem notícias.",
+    "form": {
+      "title": "Título",
+      "coverImageUrl": "URL da imagem de capa",
+      "content": "Conteúdo",
+      "contentHint": "Suporta HTML básico para formatação"
+    }
+  },
+  "partners": {
+    "title": "Parceiros",
+    "manageTitle": "Gestão de Parceiros",
+    "manageDescription": "Organizações e instituições parceiras",
+    "createTitle": "Adicionar Parceiro",
+    "editTitle": "Editar Parceiro",
+    "newTitle": "Novo Parceiro",
+    "createLabel": "Adicionar parceiro",
+    "empty": "Ainda não existem parceiros.",
+    "form": {
+      "name": "Nome",
+      "type": "Tipo",
+      "logoUrl": "URL do logo",
+      "website": "Website",
+      "websitePlaceholder": "https://...",
+      "order": "Ordem de exibição"
+    },
+    "table": {
+      "logo": "Logo",
+      "name": "Nome",
+      "type": "Tipo",
+      "order": "Ordem"
+    }
+  },
+  "gallery": {
+    "title": "Galeria",
+    "manageTitle": "Galeria de Media",
+    "manageDescription": "Fotos e vídeos exibidos no site público",
+    "addTitle": "Adicionar item",
+    "addButton": "Adicionar à galeria",
+    "addError": "Erro ao adicionar",
+    "empty": "Galeria vazia.",
+    "form": {
+      "titleOptional": "Título (opcional)",
+      "url": "URL",
+      "category": "Categoria",
+      "isVideo": "É vídeo"
+    }
+  },
+  "media": {
+    "title": "Media Library",
+    "manageTitle": "Biblioteca de Media",
+    "manageDescription": "Gestão centralizada de ficheiros e imagens",
+    "registerTitle": "Registar media",
+    "registerDescription": "Adicione URLs de ficheiros (Cloudinary ou externo)",
+    "registerButton": "Registar ficheiro",
+    "uploadError": "Erro ao carregar",
+    "empty": "Biblioteca de media vazia.",
+    "form": {
+      "filename": "Nome do ficheiro",
+      "url": "URL",
+      "cloudinaryId": "Cloudinary ID",
+      "mimeType": "Tipo MIME"
+    }
+  },
+  "users": {
+    "title": "Definições",
+    "manageTitle": "Utilizadores do CMS",
+    "manageDescription": "Gerir acessos e funções do painel de administração",
+    "createTitle": "Criar Utilizador",
+    "editTitle": "Editar Utilizador",
+    "newTitle": "Novo Utilizador",
+    "createLabel": "Novo utilizador",
+    "table": {
+      "user": "Utilizador",
+      "role": "Função",
+      "content": "Conteúdo",
+      "since": "Desde"
+    },
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "password": "Palavra-passe",
+      "passwordOptional": "Nova palavra-passe (opcional)",
+      "role": "Função",
+      "passwordRequired": "Palavra-passe é obrigatória para novos utilizadores",
+      "createButton": "Criar utilizador"
+    }
+  },
+  "table": {
+    "title": "Título",
+    "program": "Programa",
+    "type": "Tipo"
+  }
+}

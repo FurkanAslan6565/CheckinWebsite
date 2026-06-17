@@ -1,0 +1,41 @@
+import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
+import { prisma } from "@/lib/prisma";
+import { canManageProjects } from "@/lib/permissions";
+import AdminHeader from "@/components/admin/AdminHeader";
+import PageHeader from "@/components/admin/PageHeader";
+import ProjectsTable from "@/components/admin/tables/ProjectsTable";
+import { getAdminTranslations } from "@/lib/admin-i18n";
+
+export default async function AdminProjectsPage() {
+  const session = await auth();
+  if (!session?.user) redirect("/admin/login");
+  if (!canManageProjects(session.user.role)) redirect("/admin");
+
+  const t = await getAdminTranslations("projects");
+
+  const projects = await prisma.project.findMany({
+    orderBy: { updatedAt: "desc" },
+    include: { author: { select: { name: true } } },
+  });
+
+  return (
+    <>
+      <AdminHeader title={t("title")} user={session.user} />
+      <main className="p-8">
+        <PageHeader
+          title={t("manageTitle")}
+          description={t("manageDescription")}
+          createHref="/admin/projects/new"
+          createLabel={t("newTitle")}
+        />
+        <ProjectsTable
+          projects={projects.map((p) => ({
+            ...p,
+            updatedAt: p.updatedAt.toISOString(),
+          }))}
+        />
+      </main>
+    </>
+  );
+}

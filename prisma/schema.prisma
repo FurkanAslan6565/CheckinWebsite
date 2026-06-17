@@ -1,0 +1,187 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+  PROJECT_MANAGER
+}
+
+enum FundingProgram {
+  ERASMUS_PLUS
+  ESC
+  YOUTH_EXCHANGE
+  TRAINING_COURSE
+  KA1
+  KA2
+  YOUTH_PARTICIPATION
+  CERV
+}
+
+enum OpportunityType {
+  VOLUNTEERING
+  TRAINING_COURSE
+  YOUTH_EXCHANGE
+}
+
+enum ProjectStatus {
+  DRAFT
+  ACTIVE
+  COMPLETED
+}
+
+enum PartnerType {
+  EUROPEAN_INSTITUTION
+  MUNICIPALITY
+  UNIVERSITY
+  NGO
+}
+
+model User {
+  id            String          @id @default(uuid())
+  name          String
+  email         String          @unique
+  passwordHash  String
+  role          Role            @default(PROJECT_MANAGER)
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  projects      Project[]
+  opportunities Opportunity[]
+  newsArticles  News[]
+}
+
+model Project {
+  id             String         @id @default(uuid())
+  title          String
+  slug           String         @unique
+  description    String         @db.Text
+  results        String?        @db.Text
+  coverImageUrl  String
+  galleryImages  String[]       // Array of URLs
+  country        String
+  duration       String
+  startDate      DateTime?
+  endDate        DateTime?
+  program        FundingProgram
+  status         ProjectStatus  @default(DRAFT)
+  isPublished    Boolean        @default(false)
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  
+  authorId       String
+  author         User           @relation(fields: [authorId], references: [id])
+  seoMetadataId  String?        @unique
+  seoMetadata    SeoMetadata?   @relation(fields: [seoMetadataId], references: [id], onDelete: Cascade)
+
+  @@index([slug])
+  @@index([program])
+}
+
+model Opportunity {
+  id             String          @id @default(uuid())
+  title          String
+  slug           String          @unique
+  type           OpportunityType
+  description    String          @db.Text
+  requirements   String          @db.Text
+  duration       String
+  location       String
+  deadline       DateTime
+  coverImageUrl  String
+  isPublished    Boolean         @default(false)
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  
+  authorId       String
+  author         User            @relation(fields: [authorId], references: [id])
+  applications   Application[]
+  seoMetadataId  String?         @unique
+  seoMetadata    SeoMetadata?    @relation(fields: [seoMetadataId], references: [id], onDelete: Cascade)
+
+  @@index([slug])
+  @@index([type])
+  @@index([deadline])
+}
+
+model Application {
+  id             String      @id @default(uuid())
+  firstName      String
+  lastName       String
+  email          String
+  phone          String
+  birthDate      DateTime
+  motivation     String      @db.Text
+  cvUrl          String?
+  status         String      @default("PENDING") // PENDING, ACCEPTED, REJECTED
+  createdAt      DateTime    @default(now())
+  
+  opportunityId  String
+  opportunity    Opportunity @relation(fields: [opportunityId], references: [id], onDelete: Cascade)
+}
+
+model News {
+  id             String       @id @default(uuid())
+  title          String
+  slug           String       @unique
+  content        String       @db.Text
+  coverImageUrl  String
+  isPublished    Boolean      @default(false)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  
+  authorId       String
+  author         User         @relation(fields: [authorId], references: [id])
+  seoMetadataId  String?      @unique
+  seoMetadata    SeoMetadata? @relation(fields: [seoMetadataId], references: [id], onDelete: Cascade)
+
+  @@index([slug])
+}
+
+model Partner {
+  id             String      @id @default(uuid())
+  name           String
+  logoUrl        String
+  websiteUrl     String?
+  type           PartnerType
+  order          Int         @default(0) // Order for scrolling animations
+  isPublished    Boolean     @default(true)
+  createdAt      DateTime    @default(now())
+}
+
+model GalleryItem {
+  id             String      @id @default(uuid())
+  title          String?
+  url            String      // Image or Video URL
+  isVideo        Boolean     @default(false)
+  category       String      @default("General") // Erasmus+, ESC, Team, etc.
+  createdAt      DateTime    @default(now())
+}
+
+model SeoMetadata {
+  id             String       @id @default(uuid())
+  metaTitle      String?
+  metaDescription String?     @db.Text
+  keywords       String?
+  openGraphImage String?
+  
+  // Back relations
+  project        Project?
+  opportunity    Opportunity?
+  news           News?
+}
+
+model MediaAsset {
+  id             String      @id @default(uuid())
+  filename       String
+  url            String
+  cloudinaryId   String      @unique
+  bytes          Int
+  mimeType       String
+  createdAt      DateTime    @default(now())
+}
