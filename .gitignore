@@ -40,8 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Installer and portable binaries
-node_installer.msi
+# installers & temporary archives
+git-portable/
 mingit.zip
-/git-portable/
-
+node_installer.msi

@@ -6,15 +6,18 @@ import SuccessStories from '@/components/public/SuccessStories';
 import OpportunitiesList from '@/components/public/OpportunitiesList';
 import MediaGallery from '@/components/public/MediaGallery';
 import Footer from '@/components/navigation/Footer';
-// import { prisma } from "@/lib/prisma"; // TODO: Re-enable when database is connected
+import { prisma } from "@/lib/prisma";
 
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
-  // Temporarily using empty arrays until database is configured
-  const opportunities: unknown[] = [];
-  const partners: unknown[] = [];
-  const galleryItems: unknown[] = [];
+  const opportunities = await prisma.opportunity.findMany({
+    where: { isPublished: true },
+  });
+  const partners = await prisma.partner.findMany({
+    where: { isPublished: true },
+  });
+  const galleryItems = await prisma.galleryItem.findMany();
 
   return (
     <main className="min-h-screen bg-[#0A0E1A]">
